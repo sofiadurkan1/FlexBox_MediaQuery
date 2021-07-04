@@ -9,6 +9,10 @@
      padding: 40px;
      
  }
+ span{
+    visibility: hidden;
+    display: none;
+}
 
  .navbar{
      width: 100%;
@@ -27,6 +31,7 @@
  .navbar a:hover{
      background-color: rgb(26, 38, 207);
  }
+ 
 
 
  .flex-container{
@@ -35,10 +40,10 @@
      height: 250px;
      width: 80%;
      position: absolute;
-     top: 10%;
+     top: 15%;
      left: 10%;
-     flex-direction:row;
-     justify-content: space-around;
+     /* flex-direction:row; */
+     justify-content: center;
      align-items: center;
      background-color: green;
 
@@ -46,40 +51,85 @@
  @media  screen and (max-width:992px) {
      body{
          background-color:rgb(16, 186, 238);
-     }
-     /* .navbar{
-         float: none;
-     } */
+         padding: 5px;
+     }h3{
+         padding-top: 0px;
+        font-size:1.6rem;   
+    }
  }
 
- @media  screen and (max-width:800px) {
+ @media  screen and (max-width:700px) {
      body{
          background-color: orange;
      }
-      navbar {
+      .navbar {
+          display: flex;
          align-items: center ;
-         justify-content: space-between;
-         flex-direction: row;
+         justify-content: space-around;
+         flex-direction: row-reverse;
          /* flex-wrap: wrap; */
      }
+     
      
  }
 
 
-/* 
+
+
+
+
  @media  screen and  ( max-width: 600px){
      body{
-         background-color: yellowgreen;
+         background-color: rgb(216, 11, 182);
      }
-     .navbar a{
-         float: none;
+     h3{
+         display: none;
 
      }
-     .flex-container{
+     span{
+         visibility: visible;
+         border:10px solid red ;
+         background-color:#4408e7;
+         line-height: 50px;
+         justify-content:center;
+         align-items: center;
+         margin: 50px;
+         padding:60px 0;
+         font-size:1rem;
+         display: flex;
+
+     }
+     
+
+     .navbar{
+         height:250px;
+         display:flex;
+         flex-direction: column-reverse;
+         background-color: aquamarine;
+         border-style: solid;
+
+     }
+     .navbar a{
+         background:gray;
+         color:black;
+         text-align: center;
+         
+
+         
+         
+
+     }
+     
+     
+
+
+     
+      .flex-container{
+        display: none;
         flex-direction: column;
         align-items: center;
         justify-content: space-between;
-     }
+     }  
  }
-      */
+      
  
