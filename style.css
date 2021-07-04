@@ -9,10 +9,7 @@
      padding: 40px;
      
  }
- span{
-    visibility: hidden;
-    display: none;
-}
+ 
 
  .navbar{
      width: 100%;
@@ -30,6 +27,13 @@
 
  .navbar a:hover{
      background-color: rgb(26, 38, 207);
+ }
+ .divider{
+     display:none;
+ }
+ #magicBox{
+     visibility: hidden;
+     display: none;
  }
  
 
@@ -86,7 +90,7 @@
          display: none;
 
      }
-     span{
+     #magicBox{
          visibility: visible;
          border:10px solid red ;
          background-color:#4408e7;
@@ -106,18 +110,21 @@
          display:flex;
          flex-direction: column-reverse;
          background-color: aquamarine;
-         border-style: solid;
+         /* border-style: solid; */
 
      }
      .navbar a{
-         background:gray;
-         color:black;
+         display:block;
+         max-width: 100%;
+         color: black;
          text-align: center;
-         
+        
 
-         
-         
-
+     }
+     .divider{
+         display:inline;
+         border-bottom:1px solid rgb(228, 227, 227) ;
+         padding-inline:50% ;
      }
      
      
